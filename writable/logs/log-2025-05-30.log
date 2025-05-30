@@ -1,0 +1,1501 @@
+DEBUG - 2025-05-30 00:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:05:06 --> CSRF token verified.
+DEBUG - 2025-05-30 00:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 00:05:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pancong_adyas`.`karyawan`, CONSTRAINT `karyawan_ibfk_1` FOREIGN KEY (`id_cabang`) REFERENCES `cabang` (`id_cabang`)) in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\karyawan.php(38): App\Models\karyawanmodel->insertkaryawan(Array)
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\karyawan->process()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 00:05:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`pancong_adyas`.`karyawan`, CONSTRAINT `karyawan_ibfk_1` FOREIGN KEY (`id_cabang`) REFERENCES `cabang` (`id_cabang`))
+[Method: POST, Route: karyawan/process]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (:nama:, :Alamat:)', [...], false)
+ 2 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\karyawan.php(38): App\Models\karyawanmodel->insertkaryawan([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 00:05:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`pancong_adyas`.`karyawan`, CONSTRAINT `karyawan_ibfk_1` FOREIGN KEY (`id_cabang`) REFERENCES `cabang` (`id_cabang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (\'a\', \'a\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (\'a\', \'a\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (:nama:, :Alamat:)', [...], false)
+ 4 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\karyawan.php(38): App\Models\karyawanmodel->insertkaryawan([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 00:05:06 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pancong_adyas`.`karyawan`, CONSTRAINT `karyawan_ibfk_1` FOREIGN KEY (`id_cabang`) REFERENCES `cabang` (`id_cabang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (\'a\', \'a\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (\'a\', \'a\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (\'a\', \'a\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama`, `Alamat`) VALUES (:nama:, :Alamat:)', [...], false)
+ 5 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\karyawan.php(38): App\Models\karyawanmodel->insertkaryawan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:12:35 --> ErrorException: Undefined variable $cabang
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 76.
+ 1 APPPATH\Views\karyawan\create.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabang', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:13:01 --> ErrorException: Undefined variable $cabang
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 76.
+ 1 APPPATH\Views\karyawan\create.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabang', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:13:18 --> ErrorException: Attempt to read property "id_cabang" on array
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 77.
+ 1 APPPATH\Views\karyawan\create.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_cabang" on array', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:19:59 --> CSRF token verified.
+DEBUG - 2025-05-30 00:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 00:20:00 --> mysqli_sql_exception: Unknown column 'nama_karyawan' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\karyawan.php(46): App\Models\karyawanmodel->insertkaryawan(Array)
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\karyawan->process()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 00:20:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_karyawan' in 'field list'
+[Method: POST, Route: karyawan/process]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (:nama_karyawan:, :nomor_karyawan:, :tempat_lahir:, :tanggal_lahir:, :jenis_kelamin:, :id_cabang:, :alamat:, :id_user:)', [...], false)
+ 2 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\karyawan.php(46): App\Models\karyawanmodel->insertkaryawan([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 00:20:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_karyawan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (\'Guntur\', \'0838765478\', \'Batang\', \'2025-05-21\', \'laki-laki\', \'1\', \'Lawangaji\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (\'Guntur\', \'0838765478\', \'Batang\', \'2025-05-21\', \'laki-laki\', \'1\', \'Lawangaji\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (:nama_karyawan:, :nomor_karyawan:, :tempat_lahir:, :tanggal_lahir:, :jenis_kelamin:, :id_cabang:, :alamat:, :id_user:)', [...], false)
+ 4 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\karyawan.php(46): App\Models\karyawanmodel->insertkaryawan([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 00:20:00 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_karyawan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (\'Guntur\', \'0838765478\', \'Batang\', \'2025-05-21\', \'laki-laki\', \'1\', \'Lawangaji\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (\'Guntur\', \'0838765478\', \'Batang\', \'2025-05-21\', \'laki-laki\', \'1\', \'Lawangaji\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (\'Guntur\', \'0838765478\', \'Batang\', \'2025-05-21\', \'laki-laki\', \'1\', \'Lawangaji\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `karyawan` (`nama_karyawan`, `nomor_karyawan`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `id_cabang`, `alamat`, `id_user`) VALUES (:nama_karyawan:, :nomor_karyawan:, :tempat_lahir:, :tanggal_lahir:, :jenis_kelamin:, :id_cabang:, :alamat:, :id_user:)', [...], false)
+ 5 APPPATH\Models\karyawanmodel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\karyawan.php(46): App\Models\karyawanmodel->insertkaryawan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->process()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:20:33 --> CSRF token verified.
+DEBUG - 2025-05-30 00:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:28:43 --> CSRF token verified.
+DEBUG - 2025-05-30 00:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:28:43 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: login/authenticate]
+in APPPATH\Controllers\Login.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->authenticate()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+INFO - 2025-05-30 00:29:03 --> CSRF token verified.
+DEBUG - 2025-05-30 00:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:29:11 --> CSRF token verified.
+DEBUG - 2025-05-30 00:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:41:42 --> CSRF token verified.
+DEBUG - 2025-05-30 00:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:41:51 --> CSRF token verified.
+DEBUG - 2025-05-30 00:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:47:10 --> CSRF token verified.
+DEBUG - 2025-05-30 00:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:48:26 --> CSRF token verified.
+DEBUG - 2025-05-30 00:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:49:09 --> CSRF token verified.
+DEBUG - 2025-05-30 00:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:51:08 --> ErrorException: Undefined array key "nama_cabang"
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 75.
+ 1 APPPATH\Views\karyawan\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_cabang"', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:51:22 --> ErrorException: Undefined array key "nama_cabang"
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 75.
+ 1 APPPATH\Views\karyawan\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_cabang"', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:51:58 --> CSRF token verified.
+DEBUG - 2025-05-30 00:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:53:04 --> CSRF token verified.
+DEBUG - 2025-05-30 00:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:58:11 --> CSRF token verified.
+DEBUG - 2025-05-30 00:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:58:12 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: cabang]
+in APPPATH\Views\cabang\index.php on line 78.
+ 1 APPPATH\Views\cabang\index.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\cabang\\index.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\cabang\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cabang/index', [], true)
+ 5 APPPATH\Controllers\cabang.php(23): view('cabang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 00:58:58 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: karyawan/create]
+in APPPATH\Views\karyawan\create.php on line 75.
+ 1 APPPATH\Views\karyawan\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\karyawan\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('karyawan/create', [], true)
+ 5 APPPATH\Controllers\karyawan.php(31): view('karyawan/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 00:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 00:59:27 --> CSRF token verified.
+DEBUG - 2025-05-30 00:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 00:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:01:14 --> mysqli_sql_exception: Unknown column 'cabang.nama' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\karyawan->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:01:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.nama' in 'field list'
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 2 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:01:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 4 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:01:14 --> [Caused by] mysqli_sql_exception: Unknown column 'cabang.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 5 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:01:17 --> mysqli_sql_exception: Unknown column 'cabang.nama' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\karyawan->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:01:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.nama' in 'field list'
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 2 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:01:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 4 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:01:17 --> [Caused by] mysqli_sql_exception: Unknown column 'cabang.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama` as `nama_cabang`, `cabang`.`alamat` as `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 5 APPPATH\Models\karyawanmodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 01:02:46 --> Error: Call to a member function getRowArray() on array
+[Method: GET, Route: karyawan/edit/1]
+in APPPATH\Controllers\karyawan.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 01:03:01 --> Error: Call to a member function getRowArray() on array
+[Method: GET, Route: karyawan/edit/1]
+in APPPATH\Controllers\karyawan.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 01:10:41 --> CSRF token verified.
+DEBUG - 2025-05-30 01:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 01:10:54 --> CSRF token verified.
+DEBUG - 2025-05-30 01:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 01:11:02 --> CSRF token verified.
+DEBUG - 2025-05-30 01:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 01:11:07 --> CSRF token verified.
+DEBUG - 2025-05-30 01:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 01:51:32 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::getuser
+[Method: GET, Route: user]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\user.php(22): CodeIgniter\Model->__call('getuser', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 01:52:32 --> ErrorException: Undefined array key "nama_user"
+[Method: GET, Route: user]
+in APPPATH\Views\user\index.php on line 78.
+ 1 APPPATH\Views\user\index.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_user"', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\user\\index.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\user.php(23): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 01:54:26 --> TypeError: Unsupported operand types: string + int
+[Method: GET, Route: user]
+in APPPATH\Views\user\index.php on line 71.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 4 APPPATH\Controllers\user.php(23): view('user/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:54:51 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\user.php(22): App\Models\UserModel->getuser()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\user->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:54:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 2 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:54:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 4 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:54:51 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 5 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:56:01 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\user.php(22): App\Models\UserModel->getuser()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\user->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:56:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 2 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:56:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 4 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:56:01 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 5 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:56:02 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\user.php(22): App\Models\UserModel->getuser()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\user->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:56:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 2 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:56:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 4 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:56:03 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.`username`, `user`.`is_deleted` AS `alamat_user`
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:', [...], false)
+ 5 APPPATH\Models\usermodel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 01:57:18 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\usermodel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\user.php(22): App\Models\UserModel->getuser()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\user->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 01:57:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`', [], false)
+ 2 APPPATH\Models\usermodel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:57:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`', [], false)
+ 4 APPPATH\Models\usermodel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 01:57:18 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `user`.*
+FROM `user`
+JOIN `user` ON `user`.`id_user` = `karyawan`.`id_user`', [], false)
+ 5 APPPATH\Models\usermodel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\user.php(22): App\Models\UserModel->getuser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 01:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 01:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:10:46 --> CSRF token verified.
+DEBUG - 2025-05-30 02:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:11:06 --> CSRF token verified.
+DEBUG - 2025-05-30 02:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:11:15 --> CSRF token verified.
+DEBUG - 2025-05-30 02:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:12:17 --> CSRF token verified.
+DEBUG - 2025-05-30 02:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:12:23 --> CSRF token verified.
+DEBUG - 2025-05-30 02:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:12:36 --> CSRF token verified.
+DEBUG - 2025-05-30 02:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 02:16:36 --> TypeError: CodeIgniter\Database\BaseBuilder::getOperatorFromWhereKey(): Argument #1 ($whereKey) must be of type string, int given, called in D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php on line 781
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3495.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(781): CodeIgniter\Database\BaseBuilder->getOperatorFromWhereKey(0)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(722): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', false, 1, 'AND ', true)
+ 3 APPPATH\Models\karyawanmodel.php(20): CodeIgniter\Database\BaseBuilder->where(false, 1)
+ 4 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 02:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 02:16:44 --> mysqli_sql_exception: Unknown column '!karyawan.id_karyawan' in 'where clause' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawa...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawa...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawa...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\karyawanmodel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\karyawan->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-30 02:16:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '!karyawan.id_karyawan' in 'where clause'
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:
+AND `!karyawan`.`id_karyawan` = :!karyawan.id_karyawan:', [...], false)
+ 2 APPPATH\Models\karyawanmodel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 02:16:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '!karyawan.id_karyawan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0
+AND `!karyawan`.`id_karyawan` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0
+AND `!karyawan`.`id_karyawan` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:
+AND `!karyawan`.`id_karyawan` = :!karyawan.id_karyawan:', [...], false)
+ 4 APPPATH\Models\karyawanmodel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-30 02:16:44 --> [Caused by] mysqli_sql_exception: Unknown column '!karyawan.id_karyawan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0
+AND `!karyawan`.`id_karyawan` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0
+AND `!karyawan`.`id_karyawan` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = 0
+AND `!karyawan`.`id_karyawan` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `cabang`.`nama_cabang`, `cabang`.`alamat` AS `alamat_cabang`
+FROM `karyawan`
+JOIN `cabang` ON `cabang`.`id_cabang` = `karyawan`.`id_cabang`
+WHERE `karyawan`.`is_deleted` = :karyawan.is_deleted:
+AND `!karyawan`.`id_karyawan` = :!karyawan.id_karyawan:', [...], false)
+ 5 APPPATH\Models\karyawanmodel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\karyawan.php(24): App\Models\karyawanmodel->getkaryawan()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\karyawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 02:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 02:21:29 --> mysqli_sql_exception: Table 'pancong_adyas.karyawan' doesn't exist in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(49): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:25:58 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:27:24 --> mysqli_sql_exception: Table 'pancong_adyas.karyawan' doesn't exist in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:27:57 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:28:20 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:28:48 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:29:03 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-30 02:29:15 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-30 02:31:12 --> mysqli_sql_exception: Unknown column 'nama_cabang' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ca...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:31:35 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:31:59 --> mysqli_sql_exception: Unknown column 'nama_karyawan' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002303_CreateKaryawanTable.php(85): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateKaryawanTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-30 02:32:55 --> mysqli_sql_exception: Table 'karyawan' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `k...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002303_CreateKaryawanTable.php(75): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateKaryawanTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-30 02:32:58 --> mysqli_sql_exception: Table 'karyawan' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `k...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002303_CreateKaryawanTable.php(75): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateKaryawanTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:33:54 --> mysqli_sql_exception: Unknown column 'cabang' in 'field list' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002303_CreateKaryawanTable.php(85): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateKaryawanTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-05-30 02:35:37 --> mysqli_sql_exception: Table 'karyawan' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `k...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002303_CreateKaryawanTable.php(75): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateKaryawanTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+DEBUG - 2025-05-30 02:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 02:35:58 --> mysqli_sql_exception: Table 'cabang' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `c...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-05-30-002302_CreateCabangTable.php(41): CodeIgniter\Database\Forge->createTable('cabang')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateCabangTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+DEBUG - 2025-05-30 02:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:39:15 --> CSRF token verified.
+DEBUG - 2025-05-30 02:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:39:29 --> CSRF token verified.
+DEBUG - 2025-05-30 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:40:33 --> CSRF token verified.
+DEBUG - 2025-05-30 02:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:40:52 --> CSRF token verified.
+DEBUG - 2025-05-30 02:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:41:04 --> CSRF token verified.
+DEBUG - 2025-05-30 02:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:41:15 --> CSRF token verified.
+DEBUG - 2025-05-30 02:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:41:20 --> CSRF token verified.
+DEBUG - 2025-05-30 02:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 02:41:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: user]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(23): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 02:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 02:41:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: user]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(23): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-30 02:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:17 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:21 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:26 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:44 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:51 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-30 02:43:55 --> CSRF token verified.
+DEBUG - 2025-05-30 02:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 02:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

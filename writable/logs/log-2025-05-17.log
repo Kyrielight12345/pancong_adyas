@@ -1,0 +1,605 @@
+DEBUG - 2025-05-17 01:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:38:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cabang/craete.php"
+[Method: GET, Route: cabang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cabang/craete.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cabang/craete', [], true)
+ 3 APPPATH\Controllers\cabang.php(28): view('cabang/craete')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:39:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cabang/craete.php"
+[Method: GET, Route: cabang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cabang/craete.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cabang/craete', [], true)
+ 3 APPPATH\Controllers\cabang.php(28): view('cabang/craete')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:40:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cabang/craete.php"
+[Method: GET, Route: cabang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cabang/craete.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cabang/craete', [], true)
+ 3 APPPATH\Controllers\cabang.php(28): view('cabang/craete')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:52:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cabang/process]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cabang/process', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:52:42 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cabang/process]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cabang/process', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 01:53:21 --> CSRF token verified.
+DEBUG - 2025-05-17 01:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-17 01:55:45 --> mysqli_sql_exception: Unknown column 'cabang' in 'where clause' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\system\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\project\nirmala\pancong_adyas\app\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', Array)
+#6 D:\project\nirmala\pancong_adyas\app\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+#9 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#14 {main}
+CRITICAL - 2025-05-17 01:55:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang' in 'where clause'
+[Method: GET, Route: cabang/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 2 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 4 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 01:55:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 4 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 6 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 01:55:45 --> [Caused by] mysqli_sql_exception: Unknown column 'cabang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 5 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-17 01:56:07 --> mysqli_sql_exception: Unknown column 'cabang' in 'where clause' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\system\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\project\nirmala\pancong_adyas\app\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', Array)
+#6 D:\project\nirmala\pancong_adyas\app\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+#9 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#14 {main}
+CRITICAL - 2025-05-17 01:56:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang' in 'where clause'
+[Method: GET, Route: cabang/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 2 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 4 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 01:56:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 4 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 6 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 01:56:07 --> [Caused by] mysqli_sql_exception: Unknown column 'cabang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang` = \'3\'
+AND `is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang` = :cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 5 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 01:58:09 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+[Method: GET, Route: cabang/edit/3]
+in APPPATH\Views\cabang\edit.php on line 31.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cabang/edit', [], true)
+ 4 APPPATH\Controllers\cabang.php(48): view('cabang/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 01:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 01:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:00:28 --> CSRF token verified.
+DEBUG - 2025-05-17 02:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-17 02:10:06 --> mysqli_sql_exception: Table 'pancong_adyas.cabang' doesn't exist in engine in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\system\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\project\nirmala\pancong_adyas\app\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', Array)
+#6 D:\project\nirmala\pancong_adyas\app\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+#9 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#14 {main}
+CRITICAL - 2025-05-17 02:10:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pancong_adyas.cabang' doesn't exist in engine
+[Method: GET, Route: cabang/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = :id_cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 2 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 4 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:10:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pancong_adyas.cabang' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = \'3\'
+AND `is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = :id_cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 4 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 6 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:10:06 --> [Caused by] mysqli_sql_exception: Table 'pancong_adyas.cabang' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = \'3\'
+AND `is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = \'3\'
+AND `is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = \'3\'
+AND `is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `id_cabang` = :id_cabang:
+AND `is_deleted` = :is_deleted:', [...], false)
+ 5 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Models\cabangmodel.php(18): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH\Controllers\cabang.php(47): App\Models\cabangmodel->getCabang('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 02:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-17 02:10:11 --> mysqli_sql_exception: Table 'pancong_adyas.cabang' doesn't exist in engine in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\cabang->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-17 02:10:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pancong_adyas.cabang' doesn't exist in engine
+[Method: GET, Route: cabang]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 2 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:10:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pancong_adyas.cabang' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 4 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:10:11 --> [Caused by] mysqli_sql_exception: Table 'pancong_adyas.cabang' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 5 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 02:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:10:30 --> CSRF token verified.
+DEBUG - 2025-05-17 02:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-17 02:21:18 --> mysqli_sql_exception: Unknown column 'cabang.is_deleted' in 'where clause' in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\nirmala\pancong_adyas\app\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\nirmala\pancong_adyas\app\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+#6 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(933): App\Controllers\cabang->index()
+#7 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+#8 D:\project\nirmala\pancong_adyas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\nirmala\pancong_adyas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\project\nirmala\pancong_adyas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\project\nirmala\pancong_adyas\system\rewrite.php(44): require_once('D:\\project\\nirm...')
+#13 {main}
+CRITICAL - 2025-05-17 02:21:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.is_deleted' in 'where clause'
+[Method: GET, Route: cabang]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 2 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:21:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cabang.is_deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 4 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+CRITICAL - 2025-05-17 02:21:18 --> [Caused by] mysqli_sql_exception: Unknown column 'cabang.is_deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cabang`
+WHERE `cabang`.`is_deleted` = :cabang.is_deleted:', [...], false)
+ 5 APPPATH\Models\cabangmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\cabang.php(22): App\Models\cabangmodel->getCabang()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\cabang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cabang))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-05-17 02:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:24:10 --> CSRF token verified.
+DEBUG - 2025-05-17 02:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:24:21 --> CSRF token verified.
+DEBUG - 2025-05-17 02:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:28:13 --> CSRF token verified.
+DEBUG - 2025-05-17 02:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:28:34 --> CSRF token verified.
+DEBUG - 2025-05-17 02:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-17 02:32:28 --> CSRF token verified.
+DEBUG - 2025-05-17 02:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 02:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
