@@ -1,0 +1,282 @@
+DEBUG - 2025-06-09 00:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 00:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 00:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 01:00:51 --> CSRF token verified.
+DEBUG - 2025-06-09 01:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 01:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 01:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 01:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-09 01:02:37 --> mysqli_sql_exception: Can't create table `pancong_adyas`.`log_produksi` (errno: 150 "Foreign key constraint is incorrectly formed") in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `l...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `l...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `l...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `l...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-06-09-005848_CreateLogProduksiTable.php(40): CodeIgniter\Database\Forge->createTable('log_produksi')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateLogProduksiTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-06-09 01:03:29 --> mysqli_sql_exception: Can't create table `pancong_adyas`.`log_produksi` (errno: 150 "Foreign key constraint is incorrectly formed") in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `l...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `l...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `l...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `l...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-06-09-005848_CreateLogProduksiTable.php(40): CodeIgniter\Database\Forge->createTable('log_produksi')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateLogProduksiTable->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2025-06-09 01:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 01:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:39:04 --> CSRF token verified.
+DEBUG - 2025-06-09 11:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:45:07 --> CSRF token verified.
+DEBUG - 2025-06-09 11:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:47:20 --> CSRF token verified.
+DEBUG - 2025-06-09 11:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:47:27 --> CSRF token verified.
+DEBUG - 2025-06-09 11:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-09 11:47:27 --> [DEPRECATED] Implicit conversion from float 0.5 to int loses precision in APPPATH\Models\produkmodel.php on line 24.
+ 1 APPPATH\Models\produksimodel.php(90): App\Models\produkmodel->increaseStock(1, 0.5)
+ 2 APPPATH\Controllers\produksi.php(71): App\Models\produksimodel->executeProduction([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produksi->process()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produksi))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 11:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:53:40 --> CSRF token verified.
+DEBUG - 2025-06-09 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:53:49 --> CSRF token verified.
+DEBUG - 2025-06-09 11:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:53:54 --> CSRF token verified.
+DEBUG - 2025-06-09 11:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 11:54:01 --> CSRF token verified.
+DEBUG - 2025-06-09 11:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-09 11:56:11 --> mysqli_sql_exception: Table 'bahan_baku' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `b...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-06-09-005820_CreateBahanBakuTable.php(19): CodeIgniter\Database\Forge->createTable('bahan_baku')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\BuatTabelBahanBaku->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-06-09 11:58:33 --> mysqli_sql_exception: Table 'bahan_baku' already exists in D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\project\nirmala\pancong_adyas\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `b...', 0)
+#1 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 D:\project\nirmala\pancong_adyas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 D:\project\nirmala\pancong_adyas\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 D:\project\nirmala\pancong_adyas\app\Database\Migrations\2025-06-09-005820_CreateBahanBakuTable.php(19): CodeIgniter\Database\Forge->createTable('bahan_baku')
+#5 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(876): App\Database\Migrations\BuatTabelBahanBaku->up()
+#6 D:\project\nirmala\pancong_adyas\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\project\nirmala\pancong_adyas\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\project\nirmala\pancong_adyas\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\project\nirmala\pancong_adyas\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\project\nirmala\pancong_adyas\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\project\nirmala\pancong_adyas\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\project\nirmala\pancong_adyas\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#14 D:\project\nirmala\pancong_adyas\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 D:\project\nirmala\pancong_adyas\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+DEBUG - 2025-06-09 11:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:02:51 --> CSRF token verified.
+DEBUG - 2025-06-09 12:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:04:48 --> CSRF token verified.
+DEBUG - 2025-06-09 12:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:06:34 --> CSRF token verified.
+DEBUG - 2025-06-09 12:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:06:43 --> CSRF token verified.
+DEBUG - 2025-06-09 12:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-09 12:09:20 --> ErrorException: Undefined variable $tanggal_hari_ini
+[Method: GET, Route: produksi]
+in APPPATH\Views\produksi\index.php on line 13.
+ 1 APPPATH\Views\produksi\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tanggal_hari_ini', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\produksi\\index.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\produksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produksi/index', [], true)
+ 5 APPPATH\Controllers\produksi.php(33): view('produksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 12:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-09 12:09:47 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ProduksiModel::getTodaysProduction
+[Method: GET, Route: produksi]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\produksi.php(28): CodeIgniter\Model->__call('getTodaysProduction', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\produksi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\produksi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 12:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-09 12:19:08 --> ErrorException: Undefined property: App\Controllers\produksi::$bahanBakuModel
+[Method: GET, Route: produksi/create]
+in APPPATH\Controllers\produksi.php on line 40.
+ 1 APPPATH\Controllers\produksi.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\produksi::$bahanBakuModel', 'D:\\project\\nirmala\\pancong_adyas\\app\\Controllers\\produksi.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\produksi->create()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\produksi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 12:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:22:01 --> CSRF token verified.
+DEBUG - 2025-06-09 12:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:22:16 --> CSRF token verified.
+DEBUG - 2025-06-09 12:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:35:21 --> CSRF token verified.
+DEBUG - 2025-06-09 12:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:35:39 --> CSRF token verified.
+DEBUG - 2025-06-09 12:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:37:08 --> CSRF token verified.
+DEBUG - 2025-06-09 12:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:41:43 --> CSRF token verified.
+DEBUG - 2025-06-09 12:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:42:22 --> CSRF token verified.
+DEBUG - 2025-06-09 12:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-09 12:42:22 --> [DEPRECATED] Implicit conversion from float 2.5 to int loses precision in APPPATH\Models\produkmodel.php on line 23.
+ 1 APPPATH\Controllers\produksi.php(126): App\Models\produkmodel->increaseStock(1, 2.5)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\produksi->process()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\produksi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 12:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-09 12:46:10 --> ErrorException: Undefined variable $tanggal_hari_ini
+[Method: GET, Route: produksi]
+in APPPATH\Views\produksi\index.php on line 13.
+ 1 APPPATH\Views\produksi\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tanggal_hari_ini', 'D:\\project\\nirmala\\pancong_adyas\\app\\Views\\produksi\\index.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\project\\nirmala\\pancong_adyas\\app\\Views\\produksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produksi/index', [], true)
+ 5 APPPATH\Controllers\produksi.php(31): view('produksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\produksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\produksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\project\\nirmala\\pancong_adyas\\public\\index.php')
+DEBUG - 2025-06-09 12:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:47:51 --> CSRF token verified.
+DEBUG - 2025-06-09 12:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-09 12:48:08 --> CSRF token verified.
+DEBUG - 2025-06-09 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 12:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

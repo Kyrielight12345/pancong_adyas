@@ -36,3 +36,9 @@ $routes->get('/user/edit/(:num)', 'user::edit/$1');
 $routes->post('/user/process', 'user::process');
 $routes->get('/user/edit/process/(:num)', 'user::edit_process/$1');
 $routes->get('/user/delete/(:num)', 'user::delete/$1');
+
+
+//produksi
+$routes->get('/produksi', 'produksi::index');
+$routes->get('/produksi/create', 'produksi::create');
+$routes->post('/produksi/process', 'produksi::process');

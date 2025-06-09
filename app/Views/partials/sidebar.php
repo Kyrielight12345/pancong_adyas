@@ -34,13 +34,18 @@
                 </li>
                 <li>
                     <a href="<?php echo base_url('kategori'); ?>" class="<?php echo (strpos(current_url(), 'kategori') !== false) ? 'mm-active' : ''; ?>">
-                        <i class="metismenu-icon pe-7s-albums"></i> Data Kategori
+                        <i class="metismenu-icon pe-7s-albums"></i> Data Produk
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo base_url('kategori'); ?>" class="<?php echo (strpos(current_url(), 'kategori') !== false) ? 'mm-active' : ''; ?>">
+                        <i class="metismenu-icon pe-7s-albums"></i> Data Bahan Baku
                     </a>
                 </li>
                 <li class="app-sidebar__heading">Transaksi</li>
                 <li>
-                    <a href="<?php echo base_url('bahanbaku'); ?>" class="<?php echo (strpos(current_url(), 'bahanbaku') !== false) ? 'mm-active' : ''; ?>">
-                        <i class="metismenu-icon pe-7s-box2"></i>Bahan Baku Produksi
+                    <a href="<?php echo base_url('/produksi'); ?>" class="<?php echo (strpos(current_url(), 'bahanbaku') !== false) ? 'mm-active' : ''; ?>">
+                        <i class="metismenu-icon pe-7s-box2"></i>Produksi
                     </a>
                 </li>
                 <li>
